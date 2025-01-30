@@ -8,6 +8,7 @@ import Weather from './components/Weather';
 import StyleCard from './components/StyleCard';
 import Icon from './components/Icon';
 import Problem from './components/Problem';
+import Hello from './components/Class';
 const myName="lota";
 const ValidPassword= () =><h1>Password Is Valid</h1>;
 
@@ -22,42 +23,11 @@ const App=()=>{
   return(
     <div>
 
-    <h1>displaying the list of itmes</h1>
-    {list.map((n)=>(
-<ul key={n}>
-  <li>{n}</li>
-</ul>
-
-    ))}
-    <button onClick={()=>{
-      setList([...list,'opa']);
-    }}>addLotfiToTheList</button>
-
-    <button onClick={()=>{
-      list.pop();
-      setList(list);
-
-    }}>removeFromArray</button>
-
-  {/* <Weather temp={0}/>
-  <UserStatus isAdmin={true} loggedIn={false}/>
-  <Gretting timeOfDay="Afternon"/> 
-  <StyleCard/>
-  <Icon/> */}
-  
-  <h1>hello app</h1>
-  <p>{counter}</p>
-  <button onClick={()=>{
-    setCounter(counter+1);
-  }}>+</button>
-
-<button onClick={()=>{
-  setCounter(counter-1);
-}}>-</button>
-
+   
 
 
 <Problem/>
+<Hello/>
  </div>
   )
 
